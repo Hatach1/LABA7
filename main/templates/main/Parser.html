@@ -1,0 +1,24 @@
+{% extends 'main\Base.html' %}
+
+{% block title %} Парсер {% endblock %}
+
+{% block content %} 
+<div class="content parser">
+    <h1>Парсер</h1>
+    <p>Парсер проходит по разделу "Аниме(вид мультипликации) – лучшие фильмы и сериалы" сайта Кинопоиск. Вы можете ввести слово, по которому хотите найти аниме(вид мультипликации) <strong>(Чувствительно к регистру)</strong>, после чего нажать кнопку обработать и получить полное название, а так-же рейтинг аниме.</p>
+
+
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="text" name="Key">
+        <button type="submit">Обработать</button>
+    </form> 
+
+    {% for el in answer %}
+        {% if el.name != '' %}
+            <p>Название:{{el.name}}; Рейтинг: {{el.rating}}; Ссылка:<a href="{{el.link}}">{{el.link}}</a></p>
+        {% endif %}
+    {% endfor %}
+
+</div>
+{% endblock %}

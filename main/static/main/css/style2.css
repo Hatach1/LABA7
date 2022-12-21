@@ -1,0 +1,76 @@
+body {
+    background: rgb(102, 102, 102);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+a:hover{
+    color:#FFDB8B
+	
+}
+
+form {
+    text-align: center;
+    margin-top: 30px;
+	
+}
+
+.navbar {
+    margin: 20px 300px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.content {
+    float: center;
+    color: rgb(0, 0, 0);
+    align-items: center;
+}
+
+.content h1 {
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 250px;
+}
+
+.home p {
+    /* width: 50%;
+    margin: auto; */
+    margin-top: 20px;
+    text-align: center;
+    padding: 0 500px;
+    
+}
+
+.contacts {
+    text-align: center;
+}
+
+.contacts ul {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.contacts ul a {
+    margin-top: 6px;
+    text-decoration: none;
+    color: rgb(213, 216, 14);
+}
+
+.contacts ul a:hover {
+    color: rgb(251, 255, 0);
+    transition: all 0.4s ease;
+}
+
+.parser {
+    text-align: center;
+    padding: 0 500px
+}
